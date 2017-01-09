@@ -1,0 +1,2 @@
+# UTAURtLibHelper
+一个简单而且没用的UTAU相关支持库修补工具
