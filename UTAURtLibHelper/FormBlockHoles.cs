@@ -41,6 +41,9 @@ namespace UTAURtLibHelper
 
         private void FormBlockHoles_Load(object sender, EventArgs e)
         {
+            MaximizeBox = false;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+
             btnReg.Enabled = false;
             if (winType == true)
             {

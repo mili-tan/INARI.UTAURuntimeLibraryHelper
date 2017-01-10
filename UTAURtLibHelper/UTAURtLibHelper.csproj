@@ -87,6 +87,12 @@
     <Compile Include="FormBlockHoles.Designer.cs">
       <DependentUpon>FormBlockHoles.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPatch.Designer.cs">
+      <DependentUpon>FormPatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="loadForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBlockHoles.resx">
       <DependentUpon>FormBlockHoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPatch.resx">
+      <DependentUpon>FormPatch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loadForm.resx">
       <DependentUpon>loadForm.cs</DependentUpon>

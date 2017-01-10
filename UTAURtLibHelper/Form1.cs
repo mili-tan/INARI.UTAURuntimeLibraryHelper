@@ -27,8 +27,9 @@ namespace UTAURtLibHelper
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.MaximizeBox = false;
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+
             RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows NT\\CurrentVersion");
             lbWinVer.Text = Environment.OSVersion.ToString();
             winType = Environment.Is64BitOperatingSystem;
@@ -191,6 +192,12 @@ namespace UTAURtLibHelper
                 MessageBox.Show("配置文件已清空");
 
             }
+        }
+
+        private void btnPatch_Click(object sender, EventArgs e)
+        {
+            FormPatch frmPatch = new FormPatch();
+            frmPatch.Show();
         }
     }
 }

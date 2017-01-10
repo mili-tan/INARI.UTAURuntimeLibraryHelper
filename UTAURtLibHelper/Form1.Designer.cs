@@ -47,13 +47,14 @@
             this.lbUTAUVer = new System.Windows.Forms.Label();
             this.btnRegSomeThing = new System.Windows.Forms.Button();
             this.btnResetUTAU = new System.Windows.Forms.Button();
+            this.btnPatch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCOMDLG32
             // 
             this.btnCOMDLG32.CausesValidation = false;
             this.btnCOMDLG32.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnCOMDLG32.Location = new System.Drawing.Point(16, 285);
+            this.btnCOMDLG32.Location = new System.Drawing.Point(18, 201);
             this.btnCOMDLG32.Name = "btnCOMDLG32";
             this.btnCOMDLG32.Size = new System.Drawing.Size(221, 28);
             this.btnCOMDLG32.TabIndex = 0;
@@ -95,7 +96,7 @@
             // 
             this.btnMSCOMCTL.CausesValidation = false;
             this.btnMSCOMCTL.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnMSCOMCTL.Location = new System.Drawing.Point(243, 285);
+            this.btnMSCOMCTL.Location = new System.Drawing.Point(245, 201);
             this.btnMSCOMCTL.Name = "btnMSCOMCTL";
             this.btnMSCOMCTL.Size = new System.Drawing.Size(220, 28);
             this.btnMSCOMCTL.TabIndex = 5;
@@ -177,7 +178,7 @@
             // 
             this.btnOpenUTAUFile.CausesValidation = false;
             this.btnOpenUTAUFile.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnOpenUTAUFile.Location = new System.Drawing.Point(16, 251);
+            this.btnOpenUTAUFile.Location = new System.Drawing.Point(18, 167);
             this.btnOpenUTAUFile.Name = "btnOpenUTAUFile";
             this.btnOpenUTAUFile.Size = new System.Drawing.Size(447, 28);
             this.btnOpenUTAUFile.TabIndex = 12;
@@ -209,11 +210,11 @@
             // 
             this.btnRegSomeThing.CausesValidation = false;
             this.btnRegSomeThing.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnRegSomeThing.Location = new System.Drawing.Point(16, 319);
+            this.btnRegSomeThing.Location = new System.Drawing.Point(19, 269);
             this.btnRegSomeThing.Name = "btnRegSomeThing";
             this.btnRegSomeThing.Size = new System.Drawing.Size(221, 28);
             this.btnRegSomeThing.TabIndex = 15;
-            this.btnRegSomeThing.Text = "缺啥补啥";
+            this.btnRegSomeThing.Text = "自行修补";
             this.btnRegSomeThing.UseVisualStyleBackColor = true;
             this.btnRegSomeThing.Click += new System.EventHandler(this.btnRegSomeThing_Click);
             // 
@@ -221,7 +222,7 @@
             // 
             this.btnResetUTAU.CausesValidation = false;
             this.btnResetUTAU.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnResetUTAU.Location = new System.Drawing.Point(242, 319);
+            this.btnResetUTAU.Location = new System.Drawing.Point(245, 269);
             this.btnResetUTAU.Name = "btnResetUTAU";
             this.btnResetUTAU.Size = new System.Drawing.Size(221, 28);
             this.btnResetUTAU.TabIndex = 16;
@@ -229,11 +230,23 @@
             this.btnResetUTAU.UseVisualStyleBackColor = true;
             this.btnResetUTAU.Click += new System.EventHandler(this.btnResetUTAU_Click);
             // 
+            // btnPatch
+            // 
+            this.btnPatch.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnPatch.Location = new System.Drawing.Point(18, 235);
+            this.btnPatch.Name = "btnPatch";
+            this.btnPatch.Size = new System.Drawing.Size(447, 28);
+            this.btnPatch.TabIndex = 17;
+            this.btnPatch.Text = "其他文件修补";
+            this.btnPatch.UseVisualStyleBackColor = true;
+            this.btnPatch.Click += new System.EventHandler(this.btnPatch_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 361);
+            this.ClientSize = new System.Drawing.Size(484, 311);
+            this.Controls.Add(this.btnPatch);
             this.Controls.Add(this.btnResetUTAU);
             this.Controls.Add(this.btnRegSomeThing);
             this.Controls.Add(this.lbUTAUVer);
@@ -280,6 +293,7 @@
         private System.Windows.Forms.Label lbUTAUVer;
         private System.Windows.Forms.Button btnRegSomeThing;
         private System.Windows.Forms.Button btnResetUTAU;
+        private System.Windows.Forms.Button btnPatch;
     }
 }
 
