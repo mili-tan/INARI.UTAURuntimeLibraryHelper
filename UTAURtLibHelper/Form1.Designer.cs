@@ -57,7 +57,8 @@
             this.btnCOMDLG32.Location = new System.Drawing.Point(18, 201);
             this.btnCOMDLG32.Name = "btnCOMDLG32";
             this.btnCOMDLG32.Size = new System.Drawing.Size(221, 28);
-            this.btnCOMDLG32.TabIndex = 0;
+            this.btnCOMDLG32.TabIndex = 1;
+            this.btnCOMDLG32.TabStop = false;
             this.btnCOMDLG32.Text = "修补 COMDLG32";
             this.btnCOMDLG32.UseVisualStyleBackColor = true;
             this.btnCOMDLG32.Click += new System.EventHandler(this.btnCOMDLG32_Click);
@@ -99,7 +100,8 @@
             this.btnMSCOMCTL.Location = new System.Drawing.Point(245, 201);
             this.btnMSCOMCTL.Name = "btnMSCOMCTL";
             this.btnMSCOMCTL.Size = new System.Drawing.Size(220, 28);
-            this.btnMSCOMCTL.TabIndex = 5;
+            this.btnMSCOMCTL.TabIndex = 2;
+            this.btnMSCOMCTL.TabStop = false;
             this.btnMSCOMCTL.Text = "修补 MSCOMCTL";
             this.btnMSCOMCTL.UseVisualStyleBackColor = true;
             this.btnMSCOMCTL.Click += new System.EventHandler(this.btnMSCOMCTL_Click);
@@ -181,7 +183,8 @@
             this.btnOpenUTAUFile.Location = new System.Drawing.Point(18, 167);
             this.btnOpenUTAUFile.Name = "btnOpenUTAUFile";
             this.btnOpenUTAUFile.Size = new System.Drawing.Size(447, 28);
-            this.btnOpenUTAUFile.TabIndex = 12;
+            this.btnOpenUTAUFile.TabIndex = 0;
+            this.btnOpenUTAUFile.TabStop = false;
             this.btnOpenUTAUFile.Text = "打开UTAU程序目录";
             this.btnOpenUTAUFile.UseVisualStyleBackColor = true;
             this.btnOpenUTAUFile.Click += new System.EventHandler(this.btnOpenUTAUFile_Click);
@@ -213,7 +216,8 @@
             this.btnRegSomeThing.Location = new System.Drawing.Point(19, 269);
             this.btnRegSomeThing.Name = "btnRegSomeThing";
             this.btnRegSomeThing.Size = new System.Drawing.Size(221, 28);
-            this.btnRegSomeThing.TabIndex = 15;
+            this.btnRegSomeThing.TabIndex = 4;
+            this.btnRegSomeThing.TabStop = false;
             this.btnRegSomeThing.Text = "自行修补";
             this.btnRegSomeThing.UseVisualStyleBackColor = true;
             this.btnRegSomeThing.Click += new System.EventHandler(this.btnRegSomeThing_Click);
@@ -225,18 +229,21 @@
             this.btnResetUTAU.Location = new System.Drawing.Point(245, 269);
             this.btnResetUTAU.Name = "btnResetUTAU";
             this.btnResetUTAU.Size = new System.Drawing.Size(221, 28);
-            this.btnResetUTAU.TabIndex = 16;
+            this.btnResetUTAU.TabIndex = 5;
+            this.btnResetUTAU.TabStop = false;
             this.btnResetUTAU.Text = "重置UTAU配置文件";
             this.btnResetUTAU.UseVisualStyleBackColor = true;
             this.btnResetUTAU.Click += new System.EventHandler(this.btnResetUTAU_Click);
             // 
             // btnPatch
             // 
+            this.btnPatch.CausesValidation = false;
             this.btnPatch.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnPatch.Location = new System.Drawing.Point(18, 235);
             this.btnPatch.Name = "btnPatch";
             this.btnPatch.Size = new System.Drawing.Size(447, 28);
-            this.btnPatch.TabIndex = 17;
+            this.btnPatch.TabIndex = 3;
+            this.btnPatch.TabStop = false;
             this.btnPatch.Text = "其他文件修补";
             this.btnPatch.UseVisualStyleBackColor = true;
             this.btnPatch.Click += new System.EventHandler(this.btnPatch_Click);

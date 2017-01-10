@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCopy = new System.Windows.Forms.Button();
+            this.btnReg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -41,25 +42,37 @@
             this.listBox1.Size = new System.Drawing.Size(260, 172);
             this.listBox1.TabIndex = 0;
             // 
-            // button1
+            // btnCopy
             // 
-            this.button1.Location = new System.Drawing.Point(12, 190);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCopy.Location = new System.Drawing.Point(12, 202);
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.Size = new System.Drawing.Size(125, 28);
+            this.btnCopy.TabIndex = 1;
+            this.btnCopy.Text = "拷贝";
+            this.btnCopy.UseVisualStyleBackColor = true;
+            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            // 
+            // btnReg
+            // 
+            this.btnReg.Location = new System.Drawing.Point(147, 202);
+            this.btnReg.Name = "btnReg";
+            this.btnReg.Size = new System.Drawing.Size(125, 28);
+            this.btnReg.TabIndex = 2;
+            this.btnReg.Text = "注册";
+            this.btnReg.UseVisualStyleBackColor = true;
+            this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
             // 
             // FormPatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 275);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(284, 250);
+            this.Controls.Add(this.btnReg);
+            this.Controls.Add(this.btnCopy);
             this.Controls.Add(this.listBox1);
             this.Name = "FormPatch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormPatch";
+            this.Text = "其他文件修补";
             this.Load += new System.EventHandler(this.FormPatch_Load);
             this.ResumeLayout(false);
 
@@ -68,6 +81,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCopy;
+        private System.Windows.Forms.Button btnReg;
     }
 }
