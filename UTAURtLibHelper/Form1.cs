@@ -65,10 +65,7 @@ namespace UTAURtLibHelper
                 MessageBox.Show(errorMsg.Message + "\r\nCOMDLG32.OCX 文件未写入");
             }
 
-            Process p = new Process();
-            p.StartInfo.FileName = "Regsvr32.exe";
-            p.StartInfo.Arguments = SystemFile + "COMDLG32.OCX";
-            p.Start();
+            Reg.RegLib(SystemFile + "COMDLG32.OCX");
         }
 
         private void btnMSCOMCTL_Click(object sender, EventArgs e)
@@ -83,10 +80,7 @@ namespace UTAURtLibHelper
                 MessageBox.Show(errorMsg.Message + "\r\nMSCOMCTL.OCX 文件未写入");
             }
 
-            Process p = new Process();
-            p.StartInfo.FileName = "Regsvr32.exe";
-            p.StartInfo.Arguments = SystemFile + "MSCOMCTL.OCX";
-            p.Start();
+            Reg.RegLib(SystemFile + "MSCOMCTL.OCX");
         }
         private bool testRegistredOcx(string strKey)
         {

@@ -27,14 +27,6 @@ namespace UTAURtLibHelper
             InitializeComponent();
         }
 
-        static void RegLib(string path)
-        {
-            Process p = new Process();
-            p.StartInfo.FileName = "Regsvr32.exe";
-            p.StartInfo.Arguments = path;
-            p.Start();
-        }
-
         private void btnOpen_Click(object sender, EventArgs e)
         {
             openFileDialog1.CheckFileExists = true;
@@ -77,7 +69,7 @@ namespace UTAURtLibHelper
                 MessageBox.Show(errorMsg.Message + "\r\n" + FileName + " 文件未写入。");
             }
 
-            RegLib(SystemFile + FileName);
+            Reg.RegLib(SystemFile + FileName);
         }
     }
 }
