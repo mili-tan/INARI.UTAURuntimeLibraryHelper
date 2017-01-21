@@ -62,6 +62,7 @@
             this.btnCOMDLG32.Text = "修补 COMDLG32";
             this.btnCOMDLG32.UseVisualStyleBackColor = true;
             this.btnCOMDLG32.Click += new System.EventHandler(this.btnCOMDLG32_Click);
+            this.btnCOMDLG32.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnCOMDLG32_MouseDown);
             // 
             // lbWintypeT
             // 
@@ -105,6 +106,7 @@
             this.btnMSCOMCTL.Text = "修补 MSCOMCTL";
             this.btnMSCOMCTL.UseVisualStyleBackColor = true;
             this.btnMSCOMCTL.Click += new System.EventHandler(this.btnMSCOMCTL_Click);
+            this.btnMSCOMCTL.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnMSCOMCTL_MouseDown);
             // 
             // timerTest
             // 

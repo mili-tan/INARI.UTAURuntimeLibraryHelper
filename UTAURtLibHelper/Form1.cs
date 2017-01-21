@@ -199,5 +199,29 @@ namespace UTAURtLibHelper
             FormPatch frmPatch = new FormPatch();
             frmPatch.Show();
         }
+
+        private void btnCOMDLG32_MouseDown(object sender, MouseEventArgs MouseE)
+        {
+            if (MouseE.Button == MouseButtons.Right || MouseE.Button == MouseButtons.Middle)
+            {
+                DialogResult Res = MessageBox.Show("是否反注册COMDLG32.OCX？", "反注册", MessageBoxButtons.OKCancel);
+                if (Res == DialogResult.OK)
+                {
+                    Reg.UnRegLib(SystemFile + "COMDLG32.OCX");
+                }
+            }
+        }
+
+        private void btnMSCOMCTL_MouseDown(object sender, MouseEventArgs MouseE)
+        {
+            if (MouseE.Button == MouseButtons.Right || MouseE.Button == MouseButtons.Middle)
+            {
+                DialogResult Res = MessageBox.Show("是否反注册MSCOMCTL.OCX？", "反注册", MessageBoxButtons.OKCancel);
+                if (Res == DialogResult.OK)
+                {
+                    Reg.UnRegLib(SystemFile + "MSCOMCTL.OCX");
+                }
+            }
+        }
     }
 }

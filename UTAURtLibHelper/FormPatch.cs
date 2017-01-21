@@ -80,5 +80,24 @@ namespace UTAURtLibHelper
                 Reg.RegLib(SystemFile + FileName);
             }
         }
+
+        private void btnReg_MouseDown(object sender, MouseEventArgs MouseE)
+        {
+            if (FileName == null || FileName == "")
+            {
+                MessageBox.Show("请选择文件", "反注册");
+            }
+            else
+            {
+                if (MouseE.Button == MouseButtons.Right || MouseE.Button == MouseButtons.Middle)
+                {
+                    DialogResult Res = MessageBox.Show("是否反注册" + FileName, "反注册", MessageBoxButtons.OKCancel);
+                    if (Res == DialogResult.OK)
+                    {
+                        Reg.UnRegLib(SystemFile + FileName);
+                    }
+                }
+            }
+        }
     }
 }

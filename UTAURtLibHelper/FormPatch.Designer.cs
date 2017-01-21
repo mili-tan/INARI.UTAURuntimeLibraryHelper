@@ -61,6 +61,7 @@
             this.btnReg.Text = "注册";
             this.btnReg.UseVisualStyleBackColor = true;
             this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
+            this.btnReg.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnReg_MouseDown);
             // 
             // FormPatch
             // 
