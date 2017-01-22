@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.timerTransparent = new System.Windows.Forms.Timer(this.components);
             this.timerShowMainForm = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,15 +43,10 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // timerTransparent
-            // 
-            this.timerTransparent.Interval = 10;
-            this.timerTransparent.Tick += new System.EventHandler(this.timerTransparent_Tick);
-            // 
             // timerShowMainForm
             // 
             this.timerShowMainForm.Enabled = true;
-            this.timerShowMainForm.Interval = 1700;
+            this.timerShowMainForm.Interval = 1500;
             this.timerShowMainForm.Tick += new System.EventHandler(this.timerShowMainForm_Tick);
             // 
             // loadForm
@@ -73,7 +67,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Timer timerTransparent;
         private System.Windows.Forms.Timer timerShowMainForm;
     }
 }

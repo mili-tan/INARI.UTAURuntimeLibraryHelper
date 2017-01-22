@@ -13,27 +13,16 @@ namespace UTAURtLibHelper
 {
     public partial class loadForm : System.Windows.Forms.Form
     {
-        double transparent = 1.30;
         public loadForm()
         {
             Thread.Sleep(500);
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void loadForm_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
-            timerTransparent.Enabled = true;
-        }
-
-        private void timerTransparent_Tick(object sender, EventArgs e)
-        {
-            transparent = transparent - 0.01;
-            this.Opacity = transparent;
-            if (transparent == 0)
-            {
-                timerTransparent.Enabled = false;
-            }
+            TsWin.EffectsWindows(this.Handle, 1300, TsWin.AW_BLEND);
         }
 
         private void timerShowMainForm_Tick(object sender, EventArgs e)
