@@ -46,7 +46,7 @@
             // timerShowMainForm
             // 
             this.timerShowMainForm.Enabled = true;
-            this.timerShowMainForm.Interval = 1500;
+            this.timerShowMainForm.Interval = 2000;
             this.timerShowMainForm.Tick += new System.EventHandler(this.timerShowMainForm_Tick);
             // 
             // loadForm
