@@ -41,17 +41,6 @@ namespace UTAURtLibHelper
         {
             try
             {
-                FileName = listBox1.Text.ToString();
-                if (winType == true)
-                {
-                    WinFile = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
-                    SystemFile = WinFile + @"\SysWOW64\";
-                }
-                if (winType == false)
-                {
-                    WinFile = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
-                    SystemFile = WinFile + @"\system32\";
-                }
                 if (FileName == null || FileName == "")
                 {
                     MessageBox.Show("请选择文件");
@@ -97,6 +86,26 @@ namespace UTAURtLibHelper
                         Reg.UnRegLib(SystemFile + FileName);
                     }
                 }
+            }
+        }
+
+        private void listBox1_Click(object sender, EventArgs e)
+        {
+            timerGetListText.Enabled = true;
+        }
+
+        private void timerGetListText_Tick(object sender, EventArgs e)
+        {
+            FileName = listBox1.Text.ToString();
+            if (winType == true)
+            {
+                WinFile = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
+                SystemFile = WinFile + @"\SysWOW64\";
+            }
+            if (winType == false)
+            {
+                WinFile = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
+                SystemFile = WinFile + @"\system32\";
             }
         }
     }

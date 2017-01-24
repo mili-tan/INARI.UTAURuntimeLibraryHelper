@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnCopy = new System.Windows.Forms.Button();
             this.btnReg = new System.Windows.Forms.Button();
+            this.timerGetListText = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // listBox1
@@ -41,6 +43,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(260, 172);
             this.listBox1.TabIndex = 0;
+            this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
             // 
             // btnCopy
             // 
@@ -63,6 +66,11 @@
             this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
             this.btnReg.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnReg_MouseDown);
             // 
+            // timerGetListText
+            // 
+            this.timerGetListText.Interval = 1000;
+            this.timerGetListText.Tick += new System.EventHandler(this.timerGetListText_Tick);
+            // 
             // FormPatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -84,5 +92,6 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnCopy;
         private System.Windows.Forms.Button btnReg;
+        private System.Windows.Forms.Timer timerGetListText;
     }
 }
