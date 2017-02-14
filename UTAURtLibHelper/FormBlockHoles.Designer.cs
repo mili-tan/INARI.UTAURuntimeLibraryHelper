@@ -40,9 +40,11 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(12, 12);
+            this.btnOpen.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnOpen.Location = new System.Drawing.Point(16, 15);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(260, 23);
+            this.btnOpen.Size = new System.Drawing.Size(347, 29);
             this.btnOpen.TabIndex = 0;
             this.btnOpen.Text = "OpenFile";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -50,9 +52,11 @@
             // 
             // btnReg
             // 
-            this.btnReg.Location = new System.Drawing.Point(12, 42);
+            this.btnReg.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnReg.Location = new System.Drawing.Point(16, 52);
+            this.btnReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReg.Name = "btnReg";
-            this.btnReg.Size = new System.Drawing.Size(260, 23);
+            this.btnReg.Size = new System.Drawing.Size(347, 29);
             this.btnReg.TabIndex = 1;
             this.btnReg.Text = "Registration";
             this.btnReg.UseVisualStyleBackColor = true;
@@ -60,12 +64,13 @@
             // 
             // FormBlockHoles
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 79);
+            this.ClientSize = new System.Drawing.Size(379, 99);
             this.Controls.Add(this.btnReg);
             this.Controls.Add(this.btnOpen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormBlockHoles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BlockHoles";
