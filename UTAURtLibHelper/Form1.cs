@@ -1,20 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
-using System.Diagnostics;
-using System.Runtime.InteropServices;
 using System.IO;
 
 namespace UTAURtLibHelper
 {
-    public partial class Form1 : System.Windows.Forms.Form
+    public partial class Form1 : Form
     {
         string Source = @".\lib\";
         string SystemFile;
@@ -51,7 +43,7 @@ namespace UTAURtLibHelper
         {
             Application.ExitThread();
             Application.Exit();
-            System.Environment.Exit(0);
+            Environment.Exit(0);
         }
 
         private void btnCOMDLG32_Click(object sender, EventArgs e)
@@ -85,9 +77,9 @@ namespace UTAURtLibHelper
         }
         private bool testRegistredOcx(string strKey)
         {
-            Microsoft.Win32.RegistryKey keyRoot = Microsoft.Win32.Registry.ClassesRoot;
+            RegistryKey keyRoot = Registry.ClassesRoot;
             string ocxKey = strKey;
-            Microsoft.Win32.RegistryKey rkOcx = keyRoot.OpenSubKey(ocxKey);
+            RegistryKey rkOcx = keyRoot.OpenSubKey(ocxKey);
             if (rkOcx != null)
             {
                 return true;
