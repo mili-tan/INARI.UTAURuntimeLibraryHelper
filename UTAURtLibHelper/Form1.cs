@@ -75,24 +75,10 @@ namespace UTAURtLibHelper
 
             Reg.RegLib(SystemFile + "MSCOMCTL.OCX");
         }
-        private bool testRegistredOcx(string strKey)
-        {
-            RegistryKey keyRoot = Registry.ClassesRoot;
-            string ocxKey = strKey;
-            RegistryKey rkOcx = keyRoot.OpenSubKey(ocxKey);
-            if (rkOcx != null)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
 
         private void timerTest_Tick(object sender, EventArgs e)
         {
-            if (testRegistredOcx(@"CLSID\{F9043C85-F6F2-101A-A3C9-08002B2F49FB}"))
+            if (Reg.RegTest(@"CLSID\{F9043C85-F6F2-101A-A3C9-08002B2F49FB}"))
             {
                 lbCOMDLG32RegOn.Text = "已注册";
                 lbCOMDLG32RegOn.ForeColor = Color.Green;
@@ -103,7 +89,7 @@ namespace UTAURtLibHelper
                 lbCOMDLG32RegOn.ForeColor = Color.Red;
             }
 
-            if (testRegistredOcx(@"TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0"))
+            if (Reg.RegTest(@"TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0"))
             {
                 lbMSCOMCTLRegOn.Text = "已注册";
                 lbMSCOMCTLRegOn.ForeColor = Color.Green;
