@@ -172,7 +172,7 @@ namespace UTAURtLibHelper
         private void testFileAndReg()
         {
             TestDlg32File = File.Exists(@SystemFile + "COMDLG32.OCX");
-            TestDlg32Reg = testRegistredOcx(@"CLSID\{AF02484C-A0A9-4669-9051-058AB12B9195}");
+            TestDlg32Reg = testRegistredOcx(@"TypeLib\{F9043C88-F6F2-101A-A3C9-08002B2F49FB}\1.2\0\win32");
             TestComCTLFile = File.Exists(@SystemFile + "MSCOMCTL.OCX");
             TestComCTLReg = testRegistredOcx(@"TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0");
         }
