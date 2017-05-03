@@ -149,41 +149,10 @@ namespace UTAURtLibHelper
 
         }
 
-        private void btnOpenUTAUFile_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.Filter = "ParaView Application files|utau.exe";
-            openFileDialog1.FileName = "utau.exe";
-            openFileDialog1.CheckFileExists = true;
-            openFileDialog1.CheckPathExists = false;
-            DialogResult Result = openFileDialog1.ShowDialog();
-            if (Result == DialogResult.OK)
-            {
-                utauFile = openFileDialog1.FileName;
-                lbUTAUFile.Text = "UTAU程序位置： " + utauFile;
-                System.Diagnostics.FileVersionInfo utauInfo = System.Diagnostics.FileVersionInfo.GetVersionInfo(utauFile);
-                lbUTAUVer.Text = "UTAU程序版本： " + utauInfo.ProductVersion.ToString();
-            }
-        }
-
         private void btnRegSomeThing_Click(object sender, EventArgs e)
         {
             FormBlockHoles frmBH = new FormBlockHoles();
             frmBH.Show();
-        }
-
-        private void btnResetUTAU_Click(object sender, EventArgs e)
-        {
-            if (utauFile == "" || utauFile == null)
-            {
-                MessageBox.Show("文件目录错误");
-            }
-            else
-            {
-                utauFile = utauFile.Replace("utau.exe", "");
-                File.Copy(@".\use\setting.ini", utauFile + "setting.ini", true);
-                MessageBox.Show("配置文件已清空");
-
-            }
         }
 
         private void btnPatch_Click(object sender, EventArgs e)
@@ -214,6 +183,11 @@ namespace UTAURtLibHelper
                     Reg.UnRegLib(SystemFile + "MSCOMCTL.OCX");
                 }
             }
+        }
+
+        private void btnOneKey_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
