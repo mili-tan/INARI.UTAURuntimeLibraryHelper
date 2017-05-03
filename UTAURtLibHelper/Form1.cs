@@ -10,8 +10,13 @@ namespace UTAURtLibHelper
     {
         string Source = @".\lib\";
         string SystemFile;
-        string utauFile = "";
         bool winType;
+
+        bool TestDlg32Reg;
+        bool TestDlg32File;
+        bool TestComCTLReg;
+        bool TestComCTLFile;
+
         public Form1()
         {
             InitializeComponent();
@@ -78,7 +83,8 @@ namespace UTAURtLibHelper
 
         private void timerTest_Tick(object sender, EventArgs e)
         {
-            if (Reg.RegTest(@"CLSID\{F9043C85-F6F2-101A-A3C9-08002B2F49FB}"))
+            testFileAndReg();
+            if (TestDlg32Reg)
             {
                 lbCOMDLG32RegOn.Text = "已注册";
                 lbCOMDLG32RegOn.ForeColor = Color.Green;
@@ -86,10 +92,10 @@ namespace UTAURtLibHelper
             else
             {
                 lbCOMDLG32RegOn.Text = "未注册";
-                lbCOMDLG32RegOn.ForeColor = Color.Red;
+                lbCOMDLG32RegOn.ForeColor = Color.Orange;
             }
 
-            if (Reg.RegTest(@"TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0"))
+            if (TestComCTLReg)
             {
                 lbMSCOMCTLRegOn.Text = "已注册";
                 lbMSCOMCTLRegOn.ForeColor = Color.Green;
@@ -97,21 +103,10 @@ namespace UTAURtLibHelper
             else
             {
                 lbMSCOMCTLRegOn.Text = "未注册";
-                lbMSCOMCTLRegOn.ForeColor = Color.Red;
+                lbMSCOMCTLRegOn.ForeColor = Color.Orange;
             }
 
-            if (File.Exists(@SystemFile + "MSCOMCTL.OCX"))
-            {
-                lbMSCOMCTLFileOn.Text = "已存在";
-                lbMSCOMCTLFileOn.ForeColor = Color.Green;
-            }
-            else
-            {
-                lbMSCOMCTLFileOn.Text = "未存在";
-                lbMSCOMCTLFileOn.ForeColor = Color.Yellow;
-            }
-
-            if (File.Exists(@SystemFile + "MSCOMCTL.OCX"))
+            if (TestComCTLFile)
             {
                 lbMSCOMCTLFileOn.Text = "已存在";
                 lbMSCOMCTLFileOn.ForeColor = Color.YellowGreen;
@@ -122,7 +117,7 @@ namespace UTAURtLibHelper
                 lbMSCOMCTLFileOn.ForeColor = Color.Red;
             }
 
-            if (File.Exists(@SystemFile + "COMDLG32.OCX"))
+            if (TestDlg32File)
             {
                 lbCOMDLG32FileOn.Text = "已存在";
                 lbCOMDLG32FileOn.ForeColor = Color.YellowGreen;
@@ -159,6 +154,29 @@ namespace UTAURtLibHelper
             }
         }
 
+        private bool testRegistredOcx(string strKey)
+        {
+            RegistryKey keyRoot = Registry.ClassesRoot;
+            string ocxKey = strKey;
+            RegistryKey rkOcx = keyRoot.OpenSubKey(ocxKey);
+            if (rkOcx != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void testFileAndReg()
+        {
+            TestDlg32File = File.Exists(@SystemFile + "COMDLG32.OCX");
+            TestDlg32Reg = testRegistredOcx(@"CLSID\{AF02484C-A0A9-4669-9051-058AB12B9195}");
+            TestComCTLFile = File.Exists(@SystemFile + "MSCOMCTL.OCX");
+            TestComCTLReg = testRegistredOcx(@"TypeLib\{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}\2.0");
+        }
+
         private void btnMSCOMCTL_MouseDown(object sender, MouseEventArgs MouseE)
         {
             if (MouseE.Button == MouseButtons.Right || MouseE.Button == MouseButtons.Middle)
@@ -173,7 +191,48 @@ namespace UTAURtLibHelper
 
         private void btnOneKey_Click(object sender, EventArgs e)
         {
+            if (TestDlg32File == false)
+            {
+                try
+                {
+                    File.Copy(Source + "COMDLG32.OCX", SystemFile + "COMDLG32.OCX", false);
+                    MessageBox.Show("缺失的COMDLG32.OCX 写入成功");
+                }
+                catch (Exception errorMsg)
+                {
+                    MessageBox.Show(errorMsg.Message + "\r\nCOMDLG32.OCX 文件未写入");
+                }
+            }
+            if (TestDlg32Reg == false)
+            {
+                Reg.RegLib(SystemFile + "COMDLG32.OCX");
+            }
+            else if (TestDlg32Reg == true && TestDlg32File == true)
+            {
+                MessageBox.Show("COMDLG32.OCX 无需修复");
+            }
 
+            if (TestComCTLFile == false)
+            {
+                try
+                {
+                    File.Copy(Source + "MSCOMCTL.OCX", SystemFile + "MSCOMCTL.OCX", false);
+                    MessageBox.Show("MSCOMCTL.OCX 写入成功");
+                }
+                catch (Exception errorMsg)
+                {
+                    MessageBox.Show(errorMsg.Message + "\r\nMSCOMCTL.OCX 文件未写入");
+                }
+            }
+            if (TestComCTLReg == false)
+            {
+                Reg.RegLib(SystemFile + "MSCOMCTL.OCX");
+            }
+            else if (TestComCTLReg == true && TestComCTLFile == true)
+            {
+                MessageBox.Show("MSCOMCTL.OCX 无需修复");
+            }
+            testFileAndReg();
         }
     }
 }

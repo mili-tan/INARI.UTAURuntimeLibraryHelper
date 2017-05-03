@@ -69,7 +69,7 @@
             // 
             this.lbWintypeT.AutoSize = true;
             this.lbWintypeT.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbWintypeT.Location = new System.Drawing.Point(12, 16);
+            this.lbWintypeT.Location = new System.Drawing.Point(24, 17);
             this.lbWintypeT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbWintypeT.Name = "lbWintypeT";
             this.lbWintypeT.Size = new System.Drawing.Size(123, 20);
@@ -80,7 +80,7 @@
             // 
             this.lbWinVer.AutoSize = true;
             this.lbWinVer.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbWinVer.Location = new System.Drawing.Point(12, 38);
+            this.lbWinVer.Location = new System.Drawing.Point(24, 39);
             this.lbWinVer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbWinVer.Name = "lbWinVer";
             this.lbWinVer.Size = new System.Drawing.Size(76, 20);
@@ -91,7 +91,7 @@
             // 
             this.lbSystemFile.AutoSize = true;
             this.lbSystemFile.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbSystemFile.Location = new System.Drawing.Point(12, 59);
+            this.lbSystemFile.Location = new System.Drawing.Point(24, 60);
             this.lbSystemFile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSystemFile.Name = "lbSystemFile";
             this.lbSystemFile.Size = new System.Drawing.Size(80, 20);
@@ -125,7 +125,7 @@
             // 
             this.lbCOMDLG32Name.AutoSize = true;
             this.lbCOMDLG32Name.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbCOMDLG32Name.Location = new System.Drawing.Point(12, 80);
+            this.lbCOMDLG32Name.Location = new System.Drawing.Point(24, 81);
             this.lbCOMDLG32Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCOMDLG32Name.Name = "lbCOMDLG32Name";
             this.lbCOMDLG32Name.Size = new System.Drawing.Size(94, 20);
@@ -136,7 +136,7 @@
             // 
             this.lbCOMDLG32FileOn.AutoSize = true;
             this.lbCOMDLG32FileOn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbCOMDLG32FileOn.Location = new System.Drawing.Point(111, 79);
+            this.lbCOMDLG32FileOn.Location = new System.Drawing.Point(123, 80);
             this.lbCOMDLG32FileOn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCOMDLG32FileOn.Name = "lbCOMDLG32FileOn";
             this.lbCOMDLG32FileOn.Size = new System.Drawing.Size(54, 20);
@@ -147,7 +147,7 @@
             // 
             this.lbCOMDLG32RegOn.AutoSize = true;
             this.lbCOMDLG32RegOn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbCOMDLG32RegOn.Location = new System.Drawing.Point(169, 79);
+            this.lbCOMDLG32RegOn.Location = new System.Drawing.Point(181, 80);
             this.lbCOMDLG32RegOn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCOMDLG32RegOn.Name = "lbCOMDLG32RegOn";
             this.lbCOMDLG32RegOn.Size = new System.Drawing.Size(54, 20);
@@ -158,7 +158,7 @@
             // 
             this.lbMSCOMCTLRegOn.AutoSize = true;
             this.lbMSCOMCTLRegOn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbMSCOMCTLRegOn.Location = new System.Drawing.Point(169, 101);
+            this.lbMSCOMCTLRegOn.Location = new System.Drawing.Point(181, 102);
             this.lbMSCOMCTLRegOn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMSCOMCTLRegOn.Name = "lbMSCOMCTLRegOn";
             this.lbMSCOMCTLRegOn.Size = new System.Drawing.Size(54, 20);
@@ -169,7 +169,7 @@
             // 
             this.lbMSCOMCTLFileOn.AutoSize = true;
             this.lbMSCOMCTLFileOn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbMSCOMCTLFileOn.Location = new System.Drawing.Point(111, 101);
+            this.lbMSCOMCTLFileOn.Location = new System.Drawing.Point(123, 102);
             this.lbMSCOMCTLFileOn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMSCOMCTLFileOn.Name = "lbMSCOMCTLFileOn";
             this.lbMSCOMCTLFileOn.Size = new System.Drawing.Size(54, 20);
@@ -180,7 +180,7 @@
             // 
             this.lbMSCOMCTLName.AutoSize = true;
             this.lbMSCOMCTLName.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbMSCOMCTLName.Location = new System.Drawing.Point(12, 101);
+            this.lbMSCOMCTLName.Location = new System.Drawing.Point(24, 102);
             this.lbMSCOMCTLName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMSCOMCTLName.Name = "lbMSCOMCTLName";
             this.lbMSCOMCTLName.Size = new System.Drawing.Size(97, 20);
@@ -262,7 +262,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UTAU Runtime Library Helper 0.1.2";
+            this.Text = "UTAU Runtime Library Helper 2.3.2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
