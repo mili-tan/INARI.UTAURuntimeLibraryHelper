@@ -54,10 +54,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCOMDLG32.CausesValidation = false;
             this.btnCOMDLG32.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnCOMDLG32.Location = new System.Drawing.Point(24, 188);
+            this.btnCOMDLG32.Location = new System.Drawing.Point(24, 193);
             this.btnCOMDLG32.Margin = new System.Windows.Forms.Padding(4);
             this.btnCOMDLG32.Name = "btnCOMDLG32";
-            this.btnCOMDLG32.Size = new System.Drawing.Size(295, 35);
+            this.btnCOMDLG32.Size = new System.Drawing.Size(292, 35);
             this.btnCOMDLG32.TabIndex = 1;
             this.btnCOMDLG32.TabStop = false;
             this.btnCOMDLG32.Text = "修补 COMDLG32";
@@ -104,10 +104,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMSCOMCTL.CausesValidation = false;
             this.btnMSCOMCTL.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnMSCOMCTL.Location = new System.Drawing.Point(327, 188);
+            this.btnMSCOMCTL.Location = new System.Drawing.Point(327, 193);
             this.btnMSCOMCTL.Margin = new System.Windows.Forms.Padding(4);
             this.btnMSCOMCTL.Name = "btnMSCOMCTL";
-            this.btnMSCOMCTL.Size = new System.Drawing.Size(293, 35);
+            this.btnMSCOMCTL.Size = new System.Drawing.Size(290, 35);
             this.btnMSCOMCTL.TabIndex = 2;
             this.btnMSCOMCTL.TabStop = false;
             this.btnMSCOMCTL.Text = "修补 MSCOMCTL";
@@ -197,10 +197,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegSomeThing.CausesValidation = false;
             this.btnRegSomeThing.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnRegSomeThing.Location = new System.Drawing.Point(24, 273);
+            this.btnRegSomeThing.Location = new System.Drawing.Point(24, 278);
             this.btnRegSomeThing.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegSomeThing.Name = "btnRegSomeThing";
-            this.btnRegSomeThing.Size = new System.Drawing.Size(596, 35);
+            this.btnRegSomeThing.Size = new System.Drawing.Size(593, 35);
             this.btnRegSomeThing.TabIndex = 4;
             this.btnRegSomeThing.TabStop = false;
             this.btnRegSomeThing.Text = "自行修补";
@@ -213,10 +213,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPatch.CausesValidation = false;
             this.btnPatch.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnPatch.Location = new System.Drawing.Point(24, 231);
+            this.btnPatch.Location = new System.Drawing.Point(24, 236);
             this.btnPatch.Margin = new System.Windows.Forms.Padding(4);
             this.btnPatch.Name = "btnPatch";
-            this.btnPatch.Size = new System.Drawing.Size(596, 35);
+            this.btnPatch.Size = new System.Drawing.Size(593, 35);
             this.btnPatch.TabIndex = 3;
             this.btnPatch.TabStop = false;
             this.btnPatch.Text = "其他常见缺失文件修补";
@@ -229,10 +229,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOneKey.CausesValidation = false;
             this.btnOneKey.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnOneKey.Location = new System.Drawing.Point(24, 145);
+            this.btnOneKey.Location = new System.Drawing.Point(24, 150);
             this.btnOneKey.Margin = new System.Windows.Forms.Padding(4);
             this.btnOneKey.Name = "btnOneKey";
-            this.btnOneKey.Size = new System.Drawing.Size(596, 35);
+            this.btnOneKey.Size = new System.Drawing.Size(593, 35);
             this.btnOneKey.TabIndex = 0;
             this.btnOneKey.TabStop = false;
             this.btnOneKey.Text = "交给我吧";
@@ -243,7 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 337);
+            this.ClientSize = new System.Drawing.Size(642, 333);
             this.Controls.Add(this.btnPatch);
             this.Controls.Add(this.btnRegSomeThing);
             this.Controls.Add(this.btnOneKey);
