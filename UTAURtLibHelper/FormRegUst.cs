@@ -16,6 +16,7 @@ namespace UTAURtLibHelper
         public FormRegUst()
         {
             InitializeComponent();
+            Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
         }
 
         private void buttonOpenUTAUFile_Click(object sender, EventArgs e)

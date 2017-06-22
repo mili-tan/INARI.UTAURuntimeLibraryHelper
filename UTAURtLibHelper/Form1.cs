@@ -133,13 +133,13 @@ namespace UTAURtLibHelper
         private void btnRegSomeThing_Click(object sender, EventArgs e)
         {
             FormBlockHoles frmBH = new FormBlockHoles();
-            frmBH.Show();
+            frmBH.ShowDialog();
         }
 
         private void btnPatch_Click(object sender, EventArgs e)
         {
             FormPatch frmPatch = new FormPatch();
-            frmPatch.Show();
+            frmPatch.ShowDialog();
         }
 
         private void btnCOMDLG32_MouseDown(object sender, MouseEventArgs MouseE)

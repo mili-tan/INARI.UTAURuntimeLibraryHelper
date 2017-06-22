@@ -77,11 +77,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 203);
+            this.ClientSize = new System.Drawing.Size(382, 147);
             this.Controls.Add(this.buttonUnRegFileLink);
             this.Controls.Add(this.buttonRegFileLink);
             this.Controls.Add(this.buttonOpenUTAUFile);
             this.Name = "FormRegUst";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "注册文件关联";
             this.ResumeLayout(false);
 

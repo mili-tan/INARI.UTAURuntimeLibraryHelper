@@ -22,6 +22,7 @@ namespace UTAURtLibHelper
         public FormPatch()
         {
             InitializeComponent();
+            Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
         }
 
         private void FormPatch_Load(object sender, EventArgs e)
