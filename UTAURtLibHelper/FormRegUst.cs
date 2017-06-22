@@ -71,16 +71,30 @@ namespace UTAURtLibHelper
 
         private void buttonRegFileLink_Click(object sender, EventArgs e)
         {
-            RegFile(utauFile, ".ust");
-            RegFile(utauFile, ".uar");
-            MessageBox.Show("注册成功");
+            try
+            {
+                RegFile(utauFile, ".ust");
+                RegFile(utauFile, ".uar");
+                MessageBox.Show("注册成功");
+            }
+            catch (Exception errorMsg)
+            {
+                MessageBox.Show(errorMsg.Message);
+            }
         }
 
         private void buttonUnRegFileLink_Click(object sender, EventArgs e)
         {
-            UnRegFile(".ust");
-            UnRegFile(".uar");
-            MessageBox.Show("反注册成功");
+            try
+            {
+                UnRegFile(".ust");
+                UnRegFile(".uar");
+                MessageBox.Show("反注册成功");
+            }
+            catch (Exception errorMsg)
+            {
+                MessageBox.Show(errorMsg.Message);
+            }
         }
     }
 }
