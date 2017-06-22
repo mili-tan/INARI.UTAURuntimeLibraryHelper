@@ -234,5 +234,10 @@ namespace UTAURtLibHelper
             }
             testFileAndReg();
         }
+
+        private void btnUstReg_Click(object sender, EventArgs e)
+        {
+            new FormRegUst().ShowDialog();
+        }
     }
 }

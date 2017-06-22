@@ -34,15 +34,11 @@
             this.btnReg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // btnOpen
             // 
             this.btnOpen.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnOpen.Location = new System.Drawing.Point(16, 15);
-            this.btnOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOpen.Margin = new System.Windows.Forms.Padding(4);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(347, 29);
             this.btnOpen.TabIndex = 0;
@@ -54,7 +50,7 @@
             // 
             this.btnReg.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnReg.Location = new System.Drawing.Point(16, 52);
-            this.btnReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReg.Margin = new System.Windows.Forms.Padding(4);
             this.btnReg.Name = "btnReg";
             this.btnReg.Size = new System.Drawing.Size(347, 29);
             this.btnReg.TabIndex = 1;
@@ -70,7 +66,7 @@
             this.Controls.Add(this.btnReg);
             this.Controls.Add(this.btnOpen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormBlockHoles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BlockHoles";

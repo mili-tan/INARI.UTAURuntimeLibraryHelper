@@ -42,10 +42,10 @@
             this.lbMSCOMCTLRegOn = new System.Windows.Forms.Label();
             this.lbMSCOMCTLFileOn = new System.Windows.Forms.Label();
             this.lbMSCOMCTLName = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnRegSomeThing = new System.Windows.Forms.Button();
             this.btnPatch = new System.Windows.Forms.Button();
             this.btnOneKey = new System.Windows.Forms.Button();
+            this.btnUstReg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCOMDLG32
@@ -187,10 +187,6 @@
             this.lbMSCOMCTLName.TabIndex = 9;
             this.lbMSCOMCTLName.Text = "MSCOMCTL";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // btnRegSomeThing
             // 
             this.btnRegSomeThing.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -216,7 +212,7 @@
             this.btnPatch.Location = new System.Drawing.Point(24, 236);
             this.btnPatch.Margin = new System.Windows.Forms.Padding(4);
             this.btnPatch.Name = "btnPatch";
-            this.btnPatch.Size = new System.Drawing.Size(593, 35);
+            this.btnPatch.Size = new System.Drawing.Size(292, 35);
             this.btnPatch.TabIndex = 3;
             this.btnPatch.TabStop = false;
             this.btnPatch.Text = "其他常见缺失文件修补";
@@ -239,11 +235,28 @@
             this.btnOneKey.UseVisualStyleBackColor = true;
             this.btnOneKey.Click += new System.EventHandler(this.btnOneKey_Click);
             // 
+            // btnUstReg
+            // 
+            this.btnUstReg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUstReg.CausesValidation = false;
+            this.btnUstReg.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnUstReg.Location = new System.Drawing.Point(327, 235);
+            this.btnUstReg.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUstReg.Name = "btnUstReg";
+            this.btnUstReg.Size = new System.Drawing.Size(290, 35);
+            this.btnUstReg.TabIndex = 12;
+            this.btnUstReg.TabStop = false;
+            this.btnUstReg.Text = "修复UTAU文件关联";
+            this.btnUstReg.UseVisualStyleBackColor = true;
+            this.btnUstReg.Click += new System.EventHandler(this.btnUstReg_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 333);
+            this.Controls.Add(this.btnUstReg);
             this.Controls.Add(this.btnPatch);
             this.Controls.Add(this.btnRegSomeThing);
             this.Controls.Add(this.btnOneKey);
@@ -284,10 +297,10 @@
         private System.Windows.Forms.Label lbMSCOMCTLRegOn;
         private System.Windows.Forms.Label lbMSCOMCTLFileOn;
         private System.Windows.Forms.Label lbMSCOMCTLName;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button btnRegSomeThing;
         private System.Windows.Forms.Button btnPatch;
         private System.Windows.Forms.Button btnOneKey;
+        private System.Windows.Forms.Button btnUstReg;
     }
 }
 

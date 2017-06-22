@@ -99,6 +99,12 @@
     <Compile Include="FormPatch.Designer.cs">
       <DependentUpon>FormPatch.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegUst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegUst.Designer.cs">
+      <DependentUpon>FormRegUst.cs</DependentUpon>
+    </Compile>
     <Compile Include="loadForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPatch.resx">
       <DependentUpon>FormPatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegUst.resx">
+      <DependentUpon>FormRegUst.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loadForm.resx">
       <DependentUpon>loadForm.cs</DependentUpon>
