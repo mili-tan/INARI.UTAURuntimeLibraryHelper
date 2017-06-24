@@ -72,7 +72,7 @@ namespace UTAURtLibHelper
                 MessageBox.Show(errorMsg.Message + "\r\n" + FileName + " 文件未写入。");
             }
 
-            Reg.RegLib(SystemFile + FileName);
+            RegRun.RegLib(SystemFile + FileName);
         }
     }
 }

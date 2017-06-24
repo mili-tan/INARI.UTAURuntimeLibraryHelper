@@ -63,7 +63,7 @@ namespace UTAURtLibHelper
                 MessageBox.Show(errorMsg.Message + "\r\nCOMDLG32.OCX 文件未写入");
             }
 
-            Reg.RegLib(SystemFile + "COMDLG32.OCX");
+            RegRun.RegLib(SystemFile + "COMDLG32.OCX");
         }
 
         private void btnMSCOMCTL_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace UTAURtLibHelper
                 MessageBox.Show(errorMsg.Message + "\r\nMSCOMCTL.OCX 文件未写入");
             }
 
-            Reg.RegLib(SystemFile + "MSCOMCTL.OCX");
+            RegRun.RegLib(SystemFile + "MSCOMCTL.OCX");
         }
 
         private void timerTest_Tick(object sender, EventArgs e)
@@ -149,7 +149,7 @@ namespace UTAURtLibHelper
                 DialogResult Res = MessageBox.Show("是否反注册COMDLG32.OCX？", "反注册", MessageBoxButtons.OKCancel);
                 if (Res == DialogResult.OK)
                 {
-                    Reg.UnRegLib(SystemFile + "COMDLG32.OCX");
+                    RegRun.UnRegLib(SystemFile + "COMDLG32.OCX");
                 }
             }
         }
@@ -184,7 +184,7 @@ namespace UTAURtLibHelper
                 DialogResult Res = MessageBox.Show("是否反注册MSCOMCTL.OCX？", "反注册", MessageBoxButtons.OKCancel);
                 if (Res == DialogResult.OK)
                 {
-                    Reg.UnRegLib(SystemFile + "MSCOMCTL.OCX");
+                    RegRun.UnRegLib(SystemFile + "MSCOMCTL.OCX");
                 }
             }
         }
@@ -205,7 +205,7 @@ namespace UTAURtLibHelper
             }
             if (TestDlg32Reg == false)
             {
-                Reg.RegLib(SystemFile + "COMDLG32.OCX");
+                RegRun.RegLib(SystemFile + "COMDLG32.OCX");
             }
             else if (TestDlg32Reg == true && TestDlg32File == true)
             {
@@ -226,7 +226,7 @@ namespace UTAURtLibHelper
             }
             if (TestComCTLReg == false)
             {
-                Reg.RegLib(SystemFile + "MSCOMCTL.OCX");
+                RegRun.RegLib(SystemFile + "MSCOMCTL.OCX");
             }
             else if (TestComCTLReg == true && TestComCTLFile == true)
             {

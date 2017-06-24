@@ -67,7 +67,7 @@ namespace UTAURtLibHelper
             }
             else
             {
-                Reg.RegLib(SystemFile + FileName);
+                RegRun.RegLib(SystemFile + FileName);
             }
         }
 
@@ -84,7 +84,7 @@ namespace UTAURtLibHelper
                     DialogResult Res = MessageBox.Show("是否反注册" + FileName, "反注册", MessageBoxButtons.OKCancel);
                     if (Res == DialogResult.OK)
                     {
-                        Reg.UnRegLib(SystemFile + FileName);
+                        RegRun.UnRegLib(SystemFile + FileName);
                     }
                 }
             }

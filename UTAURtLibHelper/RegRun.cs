@@ -8,7 +8,7 @@ using Microsoft.Win32;
 
 namespace UTAURtLibHelper
 {
-    class Reg
+    class RegRun
     {
         public static void RegLib(string path)
         {
