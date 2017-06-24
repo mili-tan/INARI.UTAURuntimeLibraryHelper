@@ -8,13 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-using OneSet.EffectsWindow;
 
 namespace UTAURtLibHelper
 {
-    public partial class loadForm : System.Windows.Forms.Form
+    public partial class FormLoad : Form
     {
-        public loadForm()
+        public FormLoad()
         {
             Thread.Sleep(500);
             InitializeComponent();
@@ -23,7 +22,7 @@ namespace UTAURtLibHelper
 
         private void loadForm_Load(object sender, EventArgs e)
         {
-            Fx.EffectsWindow(Handle, 1300, Fx.AW_BLEND);
+            FxWin.EffectsWindows(Handle, 1300, FxWin.AW_BLEND);
         }
 
         private void timerShowMainForm_Tick(object sender, EventArgs e)

@@ -65,9 +65,6 @@
     <ApplicationIcon>URtLibHelper.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OneSet.EffectsWindow">
-      <HintPath>..\..\..\OneSet.EffectsWindow.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -105,12 +102,13 @@
     <Compile Include="FormRegUst.Designer.cs">
       <DependentUpon>FormRegUst.cs</DependentUpon>
     </Compile>
-    <Compile Include="loadForm.cs">
+    <Compile Include="FormLoad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loadForm.Designer.cs">
-      <DependentUpon>loadForm.cs</DependentUpon>
+    <Compile Include="FormLoad.Designer.cs">
+      <DependentUpon>FormLoad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FxWin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegRun.cs" />
@@ -127,8 +125,8 @@
     <EmbeddedResource Include="FormRegUst.resx">
       <DependentUpon>FormRegUst.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loadForm.resx">
-      <DependentUpon>loadForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormLoad.resx">
+      <DependentUpon>FormLoad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
