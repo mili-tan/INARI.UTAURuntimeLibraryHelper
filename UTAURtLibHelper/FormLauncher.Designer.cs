@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(282, 253);
             this.Name = "FormLauncher";
             this.Text = "FormLauncher";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLauncher_FormClosing);
             this.Load += new System.EventHandler(this.FormLauncher_Load);
             this.ResumeLayout(false);
 

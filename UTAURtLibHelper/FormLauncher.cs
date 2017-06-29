@@ -26,11 +26,11 @@ namespace UTAURtLibHelper
 
         private void FormLauncher_Load(object sender, EventArgs e)
         {
-            if (TestDlg32Reg == false)
+            if (!TestDlg32Reg)
             {
                 RegRun.RegLib("/s " + Application.StartupPath + "/lib/COMDLG32.OCX");
             }
-            if (TestComCTLReg == false)
+            if (!TestComCTLReg)
             {
                 RegRun.RegLib("/s " + Application.StartupPath + "/lib/MSCOMCTL.OCX");
             }
@@ -39,6 +39,30 @@ namespace UTAURtLibHelper
             {
                 RegUst.RegFile(utauFile, ".ust");
                 RegUst.RegFile(utauFile, ".uar");
+            }
+            catch (Exception errorMsg)
+            {
+                MessageBox.Show(errorMsg.Message);
+            }
+
+            
+        }
+
+        private void FormLauncher_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!TestDlg32Reg)
+            {
+                RegRun.UnRegLib("/s " + Application.StartupPath + "/lib/COMDLG32.OCX");
+            }
+            if (!TestComCTLReg)
+            {
+                RegRun.UnRegLib("/s " + Application.StartupPath + "/lib/MSCOMCTL.OCX");
+            }
+
+            try
+            {
+                RegUst.UnRegFile(".ust");
+                RegUst.UnRegFile(".uar");
             }
             catch (Exception errorMsg)
             {
