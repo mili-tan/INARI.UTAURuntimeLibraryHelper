@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ namespace UTAURtLibHelper
 {
     public partial class FormLauncher : Form
     {
+        Process process = new Process();
         bool TestDlg32Reg;
         bool TestComCTLReg;
         string utauFile;
@@ -50,6 +52,9 @@ namespace UTAURtLibHelper
 
             ShowInTaskbar = false;
             notifyIcon.Visible = true;
+
+            runUTAU(utauFile);
+            notifyIcon.ShowBalloonTip(1000);
         }
 
         private void FormLauncher_FormClosing(object sender, FormClosingEventArgs e)
@@ -72,10 +77,32 @@ namespace UTAURtLibHelper
             //{
             //    MessageBox.Show(errorMsg.Message);
             //}
-            MessageBox.Show("已退出并清理");
+            notifyIcon.ShowBalloonTip(5000, "UTAURtLibHelper - 启动器模式", "UTAU已退出", ToolTipIcon.Info);
+        }
+
+        private void runUTAU(string utauPath)
+        {
+            try
+            {
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.FileName = utauPath;
+                process.EnableRaisingEvents = true;
+                process.Exited += new EventHandler(utau_Exited);
+                process.Start();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            process.Kill();
+            Close();
+        }
+
+        void utau_Exited(object sender, EventArgs e)
         {
             Close();
         }
