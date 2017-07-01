@@ -38,15 +38,15 @@ namespace UTAURtLibHelper
                 RegRun.RegLib("/s " + Application.StartupPath + "/lib/MSCOMCTL.OCX");
             }
 
-            //try
-            //{
-            //    RegUst.RegFile(utauFile, ".ust");
-            //    RegUst.RegFile(utauFile, ".uar");
-            //}
-            //catch (Exception errorMsg)
-            //{
-            //    MessageBox.Show(errorMsg.Message);
-            //}
+            try
+            {
+                RegUst.RegFile(utauFile, ".ust");
+                RegUst.RegFile(utauFile, ".uar");
+            }
+            catch (Exception errorMsg)
+            {
+                MessageBox.Show(errorMsg.Message);
+            }
 
             WindowState = FormWindowState.Minimized;
 
@@ -68,15 +68,15 @@ namespace UTAURtLibHelper
                 RegRun.UnRegLib("/s " + Application.StartupPath + "/lib/MSCOMCTL.OCX");
             }
 
-            //try
-            //{
-            //    RegUst.UnRegFile(".ust");
-            //    RegUst.UnRegFile(".uar");
-            //}
-            //catch (Exception errorMsg)
-            //{
-            //    MessageBox.Show(errorMsg.Message);
-            //}
+            try
+            {
+                RegUst.UnRegFile(".ust");
+                RegUst.UnRegFile(".uar");
+            }
+            catch (Exception errorMsg)
+            {
+                MessageBox.Show(errorMsg.Message);
+            }
             notifyIcon.ShowBalloonTip(5000, "UTAURtLibHelper - 启动器模式", "UTAU已退出", ToolTipIcon.Info);
         }
 
