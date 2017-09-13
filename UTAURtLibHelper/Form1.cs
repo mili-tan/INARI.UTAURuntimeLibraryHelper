@@ -43,7 +43,7 @@ namespace UTAURtLibHelper
             }
             lbSystemFile.Text = "系统环境位置： " + SystemFile;
 
-            if (!Directory.Exists("./lib/patch"))
+            if (!Directory.Exists(@".\lib\patch"))
             {
                 btnPatch.Enabled = false;
             }

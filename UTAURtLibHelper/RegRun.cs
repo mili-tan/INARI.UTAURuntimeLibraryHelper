@@ -42,6 +42,10 @@ namespace UTAURtLibHelper
 
         public static void resLib()
         {
+            if (!Directory.Exists(@".\lib"))
+            {
+                Directory.CreateDirectory(@".\lib");
+            }
             if (!File.Exists(@".\lib\COMDLG32.ocx"))
             {
                 byte[] Save = Properties.Resources.COMDLG32;
