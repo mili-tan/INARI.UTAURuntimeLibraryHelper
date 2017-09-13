@@ -177,6 +177,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\URLH21.png" />
+    <None Include="bin\Release\lib\COMDLG32.OCX" />
+    <None Include="bin\Release\lib\MSCOMCTL.OCX" />
     <Content Include="URtLibHelper.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -61,6 +61,26 @@ namespace UTAURtLibHelper.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
+        internal static byte[] COMDLG32 {
+            get {
+                object obj = ResourceManager.GetObject("COMDLG32", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Byte[] 类型的本地化资源。
+        /// </summary>
+        internal static byte[] MSCOMCTL {
+            get {
+                object obj = ResourceManager.GetObject("MSCOMCTL", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap URLH2 {
