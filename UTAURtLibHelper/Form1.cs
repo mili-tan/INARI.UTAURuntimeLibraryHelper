@@ -42,6 +42,11 @@ namespace UTAURtLibHelper
                 SystemFile = WinFile + @"\System32\";
             }
             lbSystemFile.Text = "系统环境位置： " + SystemFile;
+
+            if (!Directory.Exists("./lib/patch"))
+            {
+                btnPatch.Enabled = false;
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

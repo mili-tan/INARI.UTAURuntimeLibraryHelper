@@ -15,6 +15,8 @@ namespace UTAURtLibHelper
         [STAThread]
         static void Main(string[] args)
         {
+            RegRun.resLib();
+
             if (!string.IsNullOrWhiteSpace(string.Join("", args)))
             {
                 Application.EnableVisualStyles();
@@ -33,6 +35,7 @@ namespace UTAURtLibHelper
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new FormLoad());
             }
+
         }
     }
 }
