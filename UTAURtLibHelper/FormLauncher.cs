@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -78,6 +79,11 @@ namespace UTAURtLibHelper
                 MessageBox.Show(errorMsg.Message);
             }
             notifyIcon.ShowBalloonTip(5000, "UTAURtLibHelper - 启动器模式", "UTAU已退出", ToolTipIcon.Info);
+
+            if (Directory.Exists(@".\lib"))
+            {
+                Directory.Delete(@".\lib");
+            }
         }
 
         private void runUTAU(string utauPath)
